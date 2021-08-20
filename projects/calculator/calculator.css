@@ -1,0 +1,64 @@
+body{
+    background-image: url('https://c8.alamy.com/comp/EMD5HM/calculator-a-background-EMD5HM.jpg');
+    background-repeat: no-repeat;
+    background-position: cover;
+   background-size: cover;
+}
+.parent{
+    width: 300px;
+    height: 600px;
+    background-color: grey;
+    margin: auto;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* padding-top: 250px; */
+  margin-left: 30px;
+  position: absolute;
+  top: 270px;
+
+}
+
+button{
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    margin:15px
+}
+.btn17{
+   
+    background-color: grey;
+    border: none;
+}
+.btn19{
+    display: hidden;
+    background-color: grey;
+    border: none;
+}
+
+.result{
+  
+    width: 250px;
+    background-color: #fff;
+    height: 90px;
+    position: relative;;
+    top: 70px;
+    left: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 35px;
+}
+.history{
+    margin: 10px;
+    width: 250px;
+    background-color: #fff;
+    height: 90px;
+    position: relative;;
+    top: 60px;
+    left: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 35px;
+}

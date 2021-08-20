@@ -1,0 +1,22 @@
+.slider{
+    width: 70%;
+    height: 400px;
+    background-image: url("./images/photo-1507842217343-583bb7270b66.jpg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: slider 10s infinite linear;
+ 
+}
+
+@keyframes slider{
+    0%{background-image: url("./images/photo-1507842217343-583bb7270b66.jpg")}
+    10%{background-image: url("./images/pngtree-blue-sports-background-promotion-banner-image_145355.jpg")}
+    75%{background-image: url("./images/tree-3822149_960_720.jpg");}
+}
+body{
+    background-color: rgb(4, 5, 80);
+}
+
+

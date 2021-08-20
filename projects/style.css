@@ -1,0 +1,42 @@
+body{
+    background:  url("./images/tree-3822149_960_720.jpg") no-repeat fixed center ;
+    background-size: cover;
+    color: black;
+}
+
+#container{
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    padding: 2rem;
+    background-color: white;
+    margin-top: 60px;
+    border-radius: 20px;
+    text-align: center;
+}
+hr{
+    width: 80%;
+}
+    .fb{
+        padding: 0.5rem 2rem;
+        background-color: blue;
+        border: none;
+        border-radius: 10px;
+    }
+    .reg{
+        padding: 0.5rem 2rem;
+        border: none;
+        background-color:green;
+        border-radius: 10px;
+    }
+    a{
+        text-decoration: none;
+    }
+#container input{
+    padding: 0.5rem;
+    padding-right: 5rem;
+    border-radius: 10px 10px;
+    border-color: blue;
+}
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./drop.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Drop down menu</title>
+    <style>
+        .fa{
+            position: relative;
+            left: 10px;
+        }
+        .home-menu{
+            display: none;
+        }
+        .active:hover .home-menu{
+display: block;
+position: absolute;
+        }
+        .active:hover .home-menu ul{
+            display: block;
+            background-color: #fff;
+        }
+        .active:hover .home-menu ul li{
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li class="active"><a href="./practise.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+            
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                <div class="home-menu">
+                    <ul>
+                        <li>smart</li>
+                        <li>workholic</li>
+                        <li>persistance</li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="">About us</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li>smart</li>
+                    <li>workholic</li>
+                    <li>persistance</li>
+                </ul>
+            </div>
+            
+            </li>
+            <li><a href="">Services</a>
+            <div class="sub-menu-2">
+                <ul>
+                    <li>sending</li>
+                    <li class="hover-me"><a href="">receiving</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <div class="sub-menu-3">
+                            <ul>
+                                <li>mailing</li>
+                                <li>meeting</li>
+                                <li><a href="">appealing</a></li>
+                                <li>killing</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>mailing</li>
+                    <li>meeting</li>
+                    <li><a href="">appealing</a><i class="fa fa-angle-right" aria-hidden="true"></i>
+                    <div class="sub-menu-4">
+                        <ul>
+                        <li>rajitha</li>
+                        <li>kusuma</li>
+                        <li>vasantha</li>
+                        
+                        </ul>
+                    </div>
+                    
+                    
+                    </li>
+                    <li>killing</li>
+                </ul>
+            </div>
+            
+            </li>
+            <li><a href="">Client</a></li>
+            <li><a href="">Investers</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Training</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+</body>
+</html>

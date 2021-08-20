@@ -1,0 +1,98 @@
+body{
+    margin: 0px;
+    padding: 0px;
+   background: url(./images/sea.jpg) no-repeat ;
+   background-size: cover;
+}
+header{
+margin: 0px;
+    background-color: #515A5A;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+}
+.left-side{
+    text-transform: uppercase;
+    color: white;
+}
+.left-side h3 span{
+    color: #00bcd4;
+}
+.right-side a{
+    float:right;
+    margin-top: -45px;
+    margin-right: 30px;
+    color: #f6f5f5;
+    text-decoration: none;
+    background-color: #00bcd4;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: all;
+}
+a.hover{
+    background: #00bcd4;
+}
+.side-bar{
+    margin-top: 45px;
+    background-color: #515A5A;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    padding-top: 50px;
+    left: 0;
+    
+    
+}
+.side-bar .profile-image{
+border-radius: 50%;
+}
+.side-bar h4{
+    color: #f6f5f5;
+}
+.side-bar a{
+    display: block;
+    color: #f6f5f5;
+    text-decoration: none;
+    padding-left: 35px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: 0.5s;
+    transition-property: all;
+}
+.side-bar a:hover{
+color: #00bcd4 ;
+}
+.side-bar i{
+    margin-right: 10px;
+}
+label #menu-btn{
+    color: #f6f5f5;
+    z-index: 1;
+    position: fixed;
+    left :400px;
+    margin-top: 20px;
+    font-size: 15px;
+    transition: 0.5s;
+    transition-property: all;
+}
+label #menu-btn:hover{
+color: #00bcd4;
+}
+#check:checked ~ .side-bar{
+left: -160px;
+}
+/* #check:checked ~ .side-bar a{
+    display: none;
+} */
+#check:checked ~ .side-bar a span{
+    display: none;
+}
+#check:checked ~ .side-bar a{
+    font-size: 20px;
+    width: 20px;
+    margin-left: 130px;
+}
+#check{
+    display: none;
+}

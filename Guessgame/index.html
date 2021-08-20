@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        .form{
+            margin: auto;
+            transform: translate(200px,200px);
+        }
+        .btn-new{
+            margin: auto;
+            transform: translate(300px,250px);
+        }
+        .random{
+            margin: auto;
+            transform: translate(150px,50px);
+            padding: 10px;
+            background-color: red;
+            color: #fff;
+            font-size: 50px;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="random">
+
+</div>
+
+    <div class="form">
+        
+            <label for="">Enter the guess:</label>
+            <input type="text" class="guessnumber" autofocus>
+            <button class="btn">Submit guess</button>
+      <br><br>
+        
+            <p class="previous"> Previous Number:</p>
+        <p class="text" style="font-size: 30px;color: #fff;"></p>
+    </div>
+
+    <button class="btn-new">Newgame</button>
+
+<script>
+let button = document.querySelector(".btn")
+let guessNumber = document.querySelector(".guessnumber")
+let guess = []
+let count = 0
+
+function getCount(){
+    if(count===10){
+        document.querySelector(".text").textContent =" your turns are over ."
+        document.querySelector(".guessnumber").disabled=true
+        button.disabled = true
+    }
+}
+function clearInput(){
+    document.querySelector(".guessnumber").value=" "
+}
+console.log(guessNumber)
+
+button.addEventListener("click",guessNum)
+let pre = document.querySelector(".previous")
+function guessNum(){
+    count++
+    console.log(count)
+    
+let value = Number(guessNumber.value)
+guess.push(value)
+
+let dice= Math.floor(Math.random()*10)+1
+let random= document.querySelector(".random")
+random.innerHTML="The expected Number is: "+dice+"."
+console.log("the value of the dice is "+dice)
+pre.textContent = "Previous Number: "
+pre.textContent+=value 
+if(value === dice){
+    document.querySelector(".text").textContent =" congratulations you won it ."
+    document.querySelector(".text").style.color = "green"
+}else if(value>dice){
+    document.querySelector(".text").textContent =" You are just wrong."
+    document.querySelector(".text").style.color="pink"
+
+}else if (value<dice){
+    document.querySelector(".text").textContent =" you are toooooo much wrong."
+    document.querySelector(".text").style.color="pink"
+}else{
+    document.querySelector(".text").textContent =" Wrong."
+    document.querySelector(".text").textContent.style.color="red"
+}
+
+clearInput()
+getCount()
+//document.querySelector(".random").innerHTML=""
+//getArray()
+
+// if(value>60){
+// document.querySelector(".text").textContent =" Last Guess was  tooo high."
+// }else{
+//     document.querySelector(".text").textContent =" Last Guess was  tooo low."
+//     document.querySelector(".text").style.color="#fff"
+    
+// }
+
+console.log(guess)
+console.log(value)
+}
+guess.map((g)=>{
+    previousGuess.textContent=g
+
+})
+let newGame = document.querySelector(".btn-new")
+newGame.addEventListener("click",getNewgame)
+
+function getNewgame(){
+    document.querySelector(".text").textContent =" "
+    document.querySelector(".guessnumber").disabled=false
+    document.querySelector(".random").innerHTML=""
+        button.disabled = false
+}
+
+</script>
+
+</body>
+</html>
